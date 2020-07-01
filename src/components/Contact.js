@@ -10,7 +10,7 @@ function Contact(props) {
             method="POST"
             >
             <label>Name</label><br></br>
-                <input type="text" name="_replyto"/>
+                <input type="text" name="name"/>
             <br></br>
             <label>Email</label><br></br>
                 <input type="text" name="_replyto"/>
