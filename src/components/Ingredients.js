@@ -18,7 +18,7 @@ function Ingredients(props) {
                 <li>
                     <img alt="Coconut Cream" src={ingIconCoconut}></img>
                     <h3>Coconut Cream</h3>
-                    <p>Coconut cream is dairy free & keto approved.</p>
+                    <p>Coconut cream is dairy-free & keto approved.</p>
                 </li>
                 <li>
                     <img alt="Cacao" src={ingIconCacao}></img>
