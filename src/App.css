@@ -320,9 +320,14 @@ div.contact {
 .contact h2 {
     color:white;
 }
+.contact p{
+    margin:1em 0em;
+    text-align: center;
+}
 .contact form {
     margin-top: 1em;
     width:100%;
+    color: white;
 }
 .contact label {
     color:white;
@@ -350,7 +355,7 @@ button {
     text-transform:lowercase;
     letter-spacing: .1em;
     padding: .5em 1em;
-    margin:0;
+    margin:1em 0em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
