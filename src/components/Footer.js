@@ -7,7 +7,7 @@ function Footer(props) {
         <div className="footer">
             <p>Copyright © 2020 Banana Boy</p>
             <p>Los Angeles, CA</p>
-            <p><a href="https://www.instagram.com/itsbananaboy/" target="_blank">
+            <p><a href="https://www.instagram.com/itsbananaboy/" target="_blank" rel="noopener noreferrer">
                 <SVG className="icon-social" src={iconInstagram}></SVG>
             </a></p>
         </div>

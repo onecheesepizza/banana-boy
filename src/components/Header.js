@@ -1,13 +1,13 @@
 import React from "react";
 import SVG from 'react-inlinesvg';
 import iconInstagram from "../images/icon-social-instagram.svg";
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link } from 'react-scroll'
 
 function Section({ title }) {
     return (
         <header>
             <h1>#ITSBANANABOY</h1>
-            <a href="https://www.instagram.com/itsbananaboy/" target="_blank">
+            <a href="https://www.instagram.com/itsbananaboy/" target="_blank" rel="noopener noreferrer">
                 <SVG className="icon-social" src={iconInstagram}></SVG>
             </a>
             {/* <img className="icon-social" alt="Instagram" src={iconInstagram}></img> */}
