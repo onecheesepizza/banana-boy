@@ -7,6 +7,7 @@ import Flavors from './components/Flavors';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
+import 'animate.css/source/animate.css';
 
 function App() {
   return (
