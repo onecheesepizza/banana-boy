@@ -1,4 +1,5 @@
 import React from "react";
+import { css } from 'emotion';
 import ingIconBanana from "../images/icon-ing-banana-fruit.svg";
 import ingIconCoconut from "../images/icon-ing-coconut-tree.svg";
 import ingIconCacao from "../images/icon-ing-chocolate.svg";
@@ -35,7 +36,7 @@ const animation = {
 
 function Ingredients(props) {
     return (
-        <div className="ingredients">
+        <div className={style}>
         <div className="container">
             <h2>Four Simple Main Ingredients</h2>
             <ul>
@@ -65,4 +66,52 @@ function Ingredients(props) {
     );
 }
 
+const style = css`
+    background-color: #F196A1;
+    padding:2em;
+    ul {
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding:1em 0;
+        align-items: baseline;
+        /* flex-wrap: wrap; */
+    }
+    @media all and (max-width: 1070px) {
+        ul {
+            flex-wrap: wrap;
+        }
+    }
+    li {
+        flex: 1 1 auto;
+        max-width: 8em;
+        text-align: center;
+        width:10em;
+        height:100%;
+        margin: 1em 0em 0em 0em;
+    }
+    h3 {
+        margin:0;
+        padding:0;
+    }
+    p {
+        font-size: .65em;
+        margin:.5em;
+    }
+    img {
+        max-width: 50px;
+        padding:0;
+        margin:0;
+    }
+    p.quote{
+        opacity: 0.5;
+        font-size: .75em;
+        font-weight: 300;
+        font-style: italic;
+        text-align: center;
+        margin:0;
+        padding:0;
+    }
+`;
 export default Ingredients;
