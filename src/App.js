@@ -74,4 +74,10 @@ injectGlobal`
   }
 `;
 
+console.log(`
+Developed by Brian Moore 🍕
+https://onecheesepizza.dev
+https://github.com/onecheesepizza
+`);
+
 export default App;
