@@ -50,4 +50,4 @@ export default class ContactForm extends React.Component {
     };
     xhr.send(data);
   }
-}
+};

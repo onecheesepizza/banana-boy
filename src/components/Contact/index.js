@@ -12,7 +12,7 @@ function Contact(props) {
         </div>
         </div>
     );
-}
+};
 
 const style = css`
     padding: 1.5em .5em;

@@ -19,11 +19,12 @@ const aboutIcons = [
     text: "Dairy & Gluten-Free"
     }
 ];
+
 const animation = {
     type: "fadeIn",
     duration: 1,
     delayTime: 250
-}
+};
 
 function About(props) {
     return (
@@ -53,13 +54,11 @@ function About(props) {
 const style = css`
     background-color: #FCF9D2;
     padding:2em 1em;
-    /* width:1vw; */
     ul {
         width: 100%;
         background-color: #FCF9D2;
         display:flex;
         flex-direction: row;
-        /* flex-wrap: wrap; */
         padding:1em 0;
         justify-content: space-evenly;
         align-items: baseline;
@@ -100,6 +99,6 @@ const style = css`
             transform: translateY(-15px);
         }
     }
-}`
+`;
 
 export default About;

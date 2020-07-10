@@ -13,7 +13,7 @@ function Footer(props) {
             </a></p>
         </div>
     );
-}
+};
 
 const style = css`
     padding:.5em 0em;

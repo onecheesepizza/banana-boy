@@ -28,11 +28,12 @@ const ingredientIcons = [
     text: "Raw honey naturally provides antibacterial action, wound healing effects, dietary antioxidants, and anti-inflammatory benefits."
     }
 ];
+
 const animation = {
     type: "fadeIn",
     duration: 1,
     delayTime: 250
-}
+};
 
 function Ingredients(props) {
     return (
@@ -64,7 +65,7 @@ function Ingredients(props) {
         </div>
         </div>
     );
-}
+};
 
 const style = css`
     background-color: #F196A1;
@@ -114,4 +115,5 @@ const style = css`
         padding:0;
     }
 `;
+
 export default Ingredients;

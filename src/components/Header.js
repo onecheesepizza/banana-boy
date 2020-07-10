@@ -3,7 +3,7 @@ import { css } from 'emotion';
 import SVG from 'react-inlinesvg';
 import bgImg from '../images/cone-blue.jpeg';
 import iconInstagram from "../images/icon-social-instagram.svg";
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
 
 function Section({ title }) {
     return (

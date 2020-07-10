@@ -22,11 +22,13 @@ const flavorIcons = [
     text: "Made with organic bananas, organic coconut cream, organic raw honey, organic peanut butter."
     }
 ];
+
 const animation = {
     type: "fadeIn",
     duration: 1,
     delayTime: 250
-}
+};
+
 function Section(props) {
     return (
         <div className={style}>
@@ -51,7 +53,7 @@ function Section(props) {
         </div>
        
     );
-}
+};
 
 const style = css`
     background-color: #FCF9D2;
