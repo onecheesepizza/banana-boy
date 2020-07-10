@@ -20,9 +20,9 @@ const aboutIcons = [
     }
 ];
 const animation = {
-    type:["fadeIn"],
-    duration: "1",
-    delayTime: "250"
+    type: "fadeIn",
+    duration: 1,
+    delayTime: 250
 }
 
 function About(props) {
@@ -31,7 +31,7 @@ function About(props) {
         <div className="container">
             <ul>
                 {aboutIcons.map((icon, index) => 
-                    <li>
+                    <li key={"aboutIcon"+index}>
                         <ScrollAnimation
                             animateIn={animation.type}
                             duration={animation.duration}

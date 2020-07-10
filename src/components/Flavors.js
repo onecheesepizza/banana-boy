@@ -23,9 +23,9 @@ const flavorIcons = [
     }
 ];
 const animation = {
-    type:["fadeIn"],
-    duration: "1",
-    delayTime: "250"
+    type: "fadeIn",
+    duration: 1,
+    delayTime: 250
 }
 function Section(props) {
     return (
@@ -34,7 +34,7 @@ function Section(props) {
             <h2>Flavors</h2>
             <ul>
                 {flavorIcons.map((icon, index) =>
-                    <li>
+                    <li key={"flavIcon"+index}>
                         <ScrollAnimation
                             animateIn={animation.type}
                             duration={animation.duration}

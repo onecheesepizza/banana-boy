@@ -29,9 +29,9 @@ const ingredientIcons = [
     }
 ];
 const animation = {
-    type:["fadeIn"],
-    duration: "1",
-    delayTime: "250"
+    type: "fadeIn",
+    duration: 1,
+    delayTime: 250
 }
 
 function Ingredients(props) {
@@ -41,7 +41,7 @@ function Ingredients(props) {
             <h2>Four Simple Main Ingredients</h2>
             <ul>
                 {ingredientIcons.map((icon, index) =>
-                    <li>
+                    <li key={"ingIcon"+index}>
                         <ScrollAnimation
                             animateIn={animation.type}
                             duration={animation.duration}
