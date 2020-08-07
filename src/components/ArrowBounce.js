@@ -55,8 +55,7 @@ const style= css`
         opacity: .65;
         position:absolute;
         top:90vh;
-        left:0;
-        right:0;
+        left:50vw;
         font-size:2em;
         text-align: center;
         color: white; 
@@ -74,10 +73,12 @@ const style= css`
     }
     .arrow a { 
         text-decoration: none; 
+        transition: color .5s;
     }
     .arrow:hover { 
         color: #F196A1;
         opacity:1;
+        transition: color .5s;
     }
 `;
 
