@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 //components
 import Header from './components/Header';
+import ArrowBounce from './components/ArrowBounce';
 import About from './components/About';
 import Ingredients from './components/Ingredients';
 import Flavors from './components/Flavors';
@@ -12,10 +13,22 @@ import './App.css'; // contains @import-normalize
 import 'animate.css/source/animate.css'; //for animations
 
 function App() {
+  //state: scroll position for ArrowBounce
+	const [scrollTop, setScrollTop] = useState(0);
+	const onScroll = (event) => {
+		setScrollTop(event.target.scrollingElement.scrollTop);
+	}
+	useEffect(() => {
+		window.addEventListener('scroll', onScroll);
+  }, []);
+  
+  //JSX
   return (
     <div className="App" >
-      {/* <Global styles={style}/> */}
       <Header></Header>
+      <ArrowBounce
+                scrollTo="about" 
+                hidden={scrollTop>0 ? true : false}/>
       <About></About>
       <Ingredients></Ingredients>
       <Flavors></Flavors>
@@ -25,6 +38,7 @@ function App() {
   );
 }
 
+//global styles
 injectGlobal`
   html, body, div, ul, li, p{
       margin:0;
