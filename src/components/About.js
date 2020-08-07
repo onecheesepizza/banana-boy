@@ -28,7 +28,7 @@ const animation = {
 
 function About(props) {
     return (
-        <div className={style} name="about">
+        <div className={style} id="about" name="about">
         <div className="container">
             <ul>
                 {aboutIcons.map((icon, index) => 
