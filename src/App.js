@@ -89,9 +89,9 @@ injectGlobal`
 `;
 
 console.log(`
-Developed by Brian Moore 🍕
-https://onecheesepizza.dev
-https://github.com/onecheesepizza
+developed by zebranode 🦓
+https://zebranode.dev
+https://github.com/zebranode
 `);
 
 export default App;
